@@ -165,12 +165,16 @@ nav .navigation-container .cart-container span{
     margin-bottom: 2rem;
 }
 .product-container .new-products-container{
+    padding-top: 2rem;
+}
+.product-container .new-products-container .new-products-header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-.product-container .new-products-container .new-products-header{
+.product-container .new-products-container .header{
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -191,4 +195,71 @@ nav .navigation-container .cart-container span{
     color: var(--primary_color);
     border-bottom: 0.1rem solid var(--primary_color);
     transition: all 0.4s;
+}
+.product-container .new-products-container .new-products-categories ul li.active{
+    color: var(--primary_color);
+    border-bottom: 0.1rem solid var(--primary_color);
+    transition: all 0.4s;
+}
+
+/* new product wrapper */
+.product-container .new-products-container .new-products-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-products-wrapper .card{
+    border: 0.1rem solid var(--span_color);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: transform 0.4s;
+}
+.new-products-wrapper .card:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+.new-products-wrapper .card .card-image{
+    height: 50rem;
+    width: 30rem;
+   
+}
+.new-products-wrapper .card .card-image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.new-products-wrapper .card .card-content{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+.new-products-wrapper .card .card-content .name{
+    font-weight: 700;
+}
+.new-products-wrapper .card .card-content .price{
+    font-weight: 700;
+    color: var(--primary_color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.new-products-wrapper .card .card-links{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: 0.3rem solid var(--span_color);
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+.new-products-wrapper .card .card-links .add-whishlist{
+    font-size: 2rem;
+}
+.new-products-wrapper .card .card-links .view-details{
+    font-size: 2rem;
+}
+.new-products-wrapper .card .card-links .add-to-cart{
+    font-size: 2rem;
+    cursor: pointer;
 }
