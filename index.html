@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Electro</title>
 </head>
+
 <body>
-    
+    <nav>
+        <div class="brand">
+            <h2>Electro
+                <span>.</span>
+            </h2>
+        </div>
+        <div class="search-container">
+            <form action="#">
+                <input type="search" name="search" id="search" placeholder="Search Here ...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="navigation-container">
+
+            <div class="wishlist-container">
+                <i class="fas fa-heart"></i>
+                <p>Wishlist</p>
+                <span>2</span>
+            </div>
+
+            <div class="cart-container">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Cart</p>
+                <span>2</span>
+            </div>
+
+            <div class="account-container">
+                <i class="fas fa-user"></i>
+                <p>Account</p>
+            </div>
+
+            <div class="menu-container">
+                <i class="fas fa-bars"></i>
+                <p>Menu</p>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-wrapper">
+        <ul>
+            <li class="menu-link active">Home</li>
+            <li class="menu-link">New Product</li>
+            <li class="menu-link">Hot Heals</li>
+            <li class="menu-link">Top Selling</li>
+            <li class="menu-link">Contact</li>
+        </ul>
+    </div>
+    <div class="product-container">
+        
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
