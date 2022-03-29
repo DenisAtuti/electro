@@ -156,3 +156,39 @@ nav .navigation-container .cart-container span{
     font-weight: 500;
     transition: all 0.4s;
 }
+
+/* PRODUCT CONTAINER */
+/* new product */
+.product-container{  
+    /* background-color: red; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.product-container .new-products-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+}
+.product-container .new-products-container .new-products-header{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.product-container .new-products-container .new-products-categories ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-container .new-products-container .new-products-categories ul li{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-bottom: 0.1rem solid transparent;
+}
+.product-container .new-products-container .new-products-categories ul li:hover{
+    color: var(--primary_color);
+    border-bottom: 0.1rem solid var(--primary_color);
+    transition: all 0.4s;
+}
