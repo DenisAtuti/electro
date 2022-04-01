@@ -1,12 +1,14 @@
+// UNIVERSAL SECTION
+const documentFile = document;
 
 // CARD SLIDER
 window.onload=function(){
     cardsDisplayed()
 };
 
-window.addEventListener('resize',()=>{
-    cardsDisplayed()
-})
+// window.addEventListener('resize',()=>{
+//     cardsDisplayed()
+// })
 
 function slickSliderResize(windowWidth) {
     var answer;
@@ -47,4 +49,28 @@ function cardsDisplayed() {
     });
 }
 
+// PRODUCT DETAILS MODEL
+//display
 
+const productItems = documentFile.querySelectorAll(".product-item");
+const productDetailModel = documentFile.querySelector(".product-detail-model-container")
+const productDetailModelClose = documentFile.querySelector(".product-model-close")
+
+productItems.forEach(productItem =>{
+  productItem.addEventListener("click",() =>{
+    productDetailModel.classList.add("active")
+  })
+})
+productDetailModelClose.addEventListener("click",() =>{
+  productDetailModel.classList.remove("active")
+})
+
+// change primary image
+const subtitudeImgs = documentFile.querySelectorAll(".subtitude-img")
+const mainImg = documentFile.querySelector(".main-img")
+
+subtitudeImgs.forEach(subtitudeImg =>{
+  subtitudeImg.addEventListener("click",() =>{
+    mainImg.src = subtitudeImg.src;
+  })
+})
