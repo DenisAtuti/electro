@@ -1,6 +1,37 @@
 // UNIVERSAL SECTION
 const documentFile = document;
 
+
+// WISHLIST MODEL
+const wishlistIcon = documentFile.querySelector(".wishlist-wrapper")
+const wishlistModel = documentFile.querySelector(".wishlist-products-container")
+
+wishlistIcon.addEventListener("click",()=>{
+  wishlistModel.classList.toggle("active")
+})
+
+// close wishlist model when clicked outside
+documentFile.addEventListener("click", function(event) {
+  if (event.target.closest(".wishlist-wrapper")) return;
+  wishlistModel.classList.remove("active")
+})
+
+
+// CART MODEL
+const cartIcon = documentFile.querySelector(".cart-wrapper")
+const cartModel = documentFile.querySelector(".cart-products-container")
+
+cartIcon.addEventListener("click",()=>{
+  cartModel.classList.toggle("active")
+})
+// close cart model when clicked outside
+documentFile.addEventListener("click", function(event) {
+  if (event.target.closest(".cart-wrapper")) return;
+  cartModel.classList.remove("active")
+})
+
+
+
 // CARD SLIDER
 window.onload=function(){
     cardsDisplayed()
@@ -73,4 +104,10 @@ subtitudeImgs.forEach(subtitudeImg =>{
   subtitudeImg.addEventListener("click",() =>{
     mainImg.src = subtitudeImg.src;
   })
+})
+
+// close product detail model when clicked outside
+documentFile.addEventListener("click", function(event) {
+  if (event.target.closest(".cart-wrapper")) return;
+  cartModel.classList.remove("active")
 })
