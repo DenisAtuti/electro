@@ -68,7 +68,7 @@ function cardsDisplayed() {
     // console.log(showSlides);
     // console.log(windowWidth);
 
-    $('.new-products-wrapper').slick({
+    $('.products-wrapper').slick({
     autoplay:true,
     autoplaySpeed:500,
     arrows:true,
@@ -83,7 +83,7 @@ function cardsDisplayed() {
 // PRODUCT DETAILS MODEL
 //display
 
-const productItems = documentFile.querySelectorAll(".product-item");
+const productItems = documentFile.querySelectorAll(".view-details");
 const productDetailModel = documentFile.querySelector(".product-detail-model-container")
 const productDetailModelClose = documentFile.querySelector(".product-model-close")
 
@@ -107,7 +107,7 @@ subtitudeImgs.forEach(subtitudeImg =>{
 })
 
 // close product detail model when clicked outside
-documentFile.addEventListener("click", function(event) {
-  if (event.target.closest(".cart-wrapper")) return;
-  cartModel.classList.remove("active")
-})
+// documentFile.addEventListener("click", function(event) {
+//   if (event.target.closest(".cart-wrapper")) return;
+//   cartModel.classList.remove("active")
+// })
